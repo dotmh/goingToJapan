@@ -1,3 +1,23 @@
-.body {
-    color: red;
+$wallpaperPadding : 1%;
+
+body {
+    background: #FFCD26;
+
+    .wallpaper {
+        background: transparent url('/assets/img/background.jpg') top left no-repeat;
+        background-size: cover;
+
+        position: absolute;
+        top: $wallpaperPadding;
+        left: $wallpaperPadding;
+        bottom: $wallpaperPadding;
+        right: $wallpaperPadding;
+
+    }
+
+    .credit-badge {
+        position: absolute;
+        bottom: 0;
+        right: $wallpaperPadding;
+    }
 }
