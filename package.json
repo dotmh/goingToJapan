@@ -1,0 +1,18 @@
+{
+  "name": "goingToJapan",
+  "version": "1.0.0",
+  "description": "My going to Japan microsite",
+  "main": "index.js",
+  "repository": "git@github.com:dotmh/goingToJapan.git",
+  "author": "Martin Haynes <oss@dotmh.io>",
+  "license": "Apache-2",
+  "private": false,
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "jstransformer-handlebars": "^1.1.0",
+    "metalsmith": "^2.3.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-sass": "^1.5.1"
+  }
+}
