@@ -12,6 +12,7 @@
     "jstransformer-handlebars": "^1.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-copy": "^0.4.0",
+    "metalsmith-discover-partials": "^0.1.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-layouts": "^2.1.0",
     "metalsmith-sass": "^1.5.1",

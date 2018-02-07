@@ -122,6 +122,10 @@ async@^2.6.0:
   dependencies:
     lodash "^4.14.0"
 
+"async@~ 0.2.9":
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/async/-/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -371,6 +375,12 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
+defaults@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
+  dependencies:
+    clone "^1.0.2"
+
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
@@ -480,6 +490,13 @@ fs-extra@~0.26.5:
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
 
+fs-tools@^0.2.11:
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/fs-tools/-/fs-tools-0.2.11.tgz#64a6339119f8da687be4d1fdbda37ee0f88e644c"
+  dependencies:
+    async "~ 0.2.9"
+    lodash "~ 2.4.1"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -579,7 +596,7 @@ gray-matter@^2.0.0:
     js-yaml "^3.8.1"
     toml "^2.3.2"
 
-handlebars@^4.0.1, handlebars@^4.0.11:
+handlebars@*, handlebars@^4.0.1, handlebars@^4.0.11:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"
   dependencies:
@@ -886,7 +903,7 @@ lodash.mergewith@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.1.tgz#639057e726c3afbdb3e7d42741caa8d6e4335927"
 
-lodash@^2.4.1, lodash@~2.4.1:
+lodash@^2.4.1, "lodash@~ 2.4.1", lodash@~2.4.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-2.4.2.tgz#fadd834b9683073da179b3eae6d9c0d15053f73e"
 
@@ -946,6 +963,14 @@ metalsmith-copy@^0.4.0:
     debug "^0.8.1"
     lodash "^2.4.1"
     minimatch "^3.0.2"
+
+metalsmith-discover-partials@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/metalsmith-discover-partials/-/metalsmith-discover-partials-0.1.0.tgz#f8f2393bcbd5e172aca7315cdc11601e1394fb23"
+  dependencies:
+    defaults "^1.0.3"
+    fs-tools "^0.2.11"
+    handlebars "*"
 
 metalsmith-filenames@^1.0.0:
   version "1.0.0"
