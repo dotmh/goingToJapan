@@ -31,6 +31,7 @@ body {
 
     .container {
         background: $backgroundColor;
+        min-width: 240px;
         width: 25%;
         text-align: center;
         padding: 3rem $wallpaperPadding;
