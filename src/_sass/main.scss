@@ -1,7 +1,12 @@
-$wallpaperPadding : 1%;
+$wallpaperPadding : 1vw;
+$backgroundColor: #FFCD26;
+$fontColor: #000000;
 
 body {
-    background: #FFCD26;
+    background: $backgroundColor;
+    font: lighter 14px 'Oswald', sans-serif;
+    color: $fontColor;
+    text-transform: uppercase;
 
     .wallpaper {
         background: transparent url('/assets/img/background.jpg') top left no-repeat;
@@ -13,11 +18,51 @@ body {
         bottom: $wallpaperPadding;
         right: $wallpaperPadding;
 
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .credit-badge {
         position: absolute;
         bottom: 0;
         right: $wallpaperPadding;
+    }
+
+    .container {
+        background: $backgroundColor;
+        width: 25%;
+        text-align: center;
+        padding: 3rem $wallpaperPadding;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 0 1rem;
+        line-height: 5rem;
+        padding: 1rem 0;
+        border-top: 1px solid $fontColor;
+
+        border-bottom: 1px solid $fontColor;
+    }
+
+    .timer {
+        display: flex;
+        width: 100%;
+
+        span {
+            text-align: center;
+            display: block;
+            width: 25%;
+
+            font-size: 3rem;
+
+            i {
+                font-size: 1rem;
+                display: block;
+                font-style: normal;
+            }
+        }
+
     }
 }

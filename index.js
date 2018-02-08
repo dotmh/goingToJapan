@@ -29,10 +29,10 @@ Metalsmith(__dirname)
         pattern: 'assets/*',
         directory: 'assets'
     })).
-    use(Watch({
-        paths : {"${source}/**/*": true}
-    }))
-    .build(function(err, files){
+    // use(Watch({
+    //     paths : {"${source}/**/*": true}
+    // })).
+    build(function(err, files){
         if(err) {
             throw err;
         }
